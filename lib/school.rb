@@ -23,8 +23,7 @@ class School
 
     def sort
         hash = {}
-        arr = @roster.sort
-        arr.each do |ele|
+        @roster.sort.each do |ele|
             hash[ele[0]] = ele[1].sort
         end
         hash
